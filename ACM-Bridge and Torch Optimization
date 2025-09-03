@@ -1,0 +1,42 @@
+Bridge & Torch Optimal-Solution 
+
+People: 1, 2, 7, 10 minutes. Torch required, max 2 people on bridge.
+Minimum total time = 17 minutes.
+
+Optimal move sequence (with times and running total)
+
+1. 1 and 2 cross → 2 minutes. (Total 2)
+
+
+2. 1 returns → 1 minute. (Total 3)
+
+
+3. 7 and 10 cross together → 10 minutes. (Total 13)
+
+
+4. 2 returns → 2 minutes. (Total 15)
+
+
+5. 1 and 2 cross → 2 minutes. (Total 17)
+
+
+
+All four are now across; nothing else gets added. Total = 17 minutes.
+
+Why this is optimal (short explanation)
+
+There are two useful general ways to move the two slowest people (7 and 10):
+
+Option A: Send the two slowest together, using the two fastest to shuttle the torch: cost for that part ≈ 2*b + a + d (where a and b are the two fastest).
+
+Option B: Have the fastest shuttle each slow one separately: cost ≈ 2*a + c + d.
+
+
+With a=1, b=2, c=7, d=10:
+
+Option A gives 2*2 + 1 + 10 = 15 for the big exchange (which fits into the 17 total when you include the initial/final crossings as arranged).
+
+Option B gives 2*1 + 7 + 10 = 19, worse.
+
+
+The shown sequence implements Option A (the better choice) and yields the global minimum 17. Any other plausible sequence gives a total ≥ 17, so 17 is optimal.
