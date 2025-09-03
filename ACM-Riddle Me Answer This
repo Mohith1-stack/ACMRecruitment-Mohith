@@ -1,0 +1,50 @@
+Solution — how the farmer can get everyone across safely
+
+Start: Left bank = {Farmer, Wolf, Goat, Cabbage} ; Right bank = {}.
+
+Sequence of moves (Farmer always in the boat):
+
+1. Farmer takes Goat to the right bank.
+
+Left: {Wolf, Cabbage} — safe (wolf & cabbage okay). Right: {Farmer, Goat}.
+
+
+
+2. Farmer returns alone to the left bank.
+
+Left: {Farmer, Wolf, Cabbage}. Right: {Goat} — safe.
+
+
+
+3. Farmer takes Wolf to the right bank.
+
+Left: {Cabbage}. Right: {Farmer, Wolf, Goat} — but Farmer must not leave Wolf & Goat together with no farmer, so we fix that next.
+
+
+
+4. Farmer brings Goat back to the left bank.
+
+Left: {Farmer, Goat, Cabbage}. Right: {Wolf} — safe (goat and cabbage together only when farmer is present).
+
+
+
+5. Farmer takes Cabbage to the right bank.
+
+Left: {Goat}. Right: {Farmer, Wolf, Cabbage} — safe (wolf & cabbage fine).
+
+
+
+6. Farmer returns alone to the left bank.
+
+Left: {Farmer, Goat}. Right: {Wolf, Cabbage} — safe.
+
+
+
+7. Farmer takes Goat to the right bank.
+
+Left: {}. Right: {Farmer, Wolf, Goat, Cabbage} — done.
+
+
+
+
+Why this works: the only risky pairs are (Wolf, Goat) and (Goat, Cabbage). Every time the farmer leaves one of those pairs unattended, the sequence avoids leaving the two together. The critical trick is bringing the goat back after taking the wolf across, so the wolf is never left alone with the goat, and the cabbage is transported only when goat is not left alone with it.
