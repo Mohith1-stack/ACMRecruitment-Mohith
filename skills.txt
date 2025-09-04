@@ -2,3 +2,4 @@ Git
 GitHub
 VS Code
 Linux
+Add skills.txt with list of skills
