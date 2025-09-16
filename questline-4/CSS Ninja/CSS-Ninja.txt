@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Me & Skills</title>
+  <style>
+    /* Reset margins and padding */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Body styling */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      padding: 20px;
+    }
+
+    /* Container holding both columns */
+    .container {
+      display: flex;
+      gap: 20px;
+      justify-content: space-between;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    /* Left column styles (About Me) */
+    .left-column {
+      flex: 1;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .left-column h2 {
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    .left-column p {
+      color: #666;
+      line-height: 1.6;
+    }
+
+    /* Right column styles (Skills) */
+    .right-column {
+      flex: 1;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .right-column h2 {
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    .right-column ul {
+      list-style-type: none;
+    }
+
+    .right-column ul li {
+      color: #666;
+      margin-bottom: 8px;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Container holding the two columns -->
+  <div class="container">
+    <!-- Left Column (About Me) -->
+    <div class="left-column">
+      <h2>About Me</h2>
+      <p>I am a passionate web developer with experience in creating interactive and user-friendly websites. My interests include coding, designing, and learning new technologies.</p>
+    </div>
+
+    <!-- Right Column (Skills) -->
+    <div class="right-column">
+      <h2>Skills</h2>
+      <ul>
+        <li>HTML & CSS</li>
+        <li>JavaScript</li>
+        <li>React</li>
+        <li>Node.js</li>
+        <li>Git & GitHub</li>
+      </ul>
+    </div>
+  </div>
+
+</body>
+</html>
+
