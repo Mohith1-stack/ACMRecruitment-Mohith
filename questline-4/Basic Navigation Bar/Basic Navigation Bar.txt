@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Navbar</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: Arial, sans-serif; }
+
+    /* Navbar Styles */
+    nav { background: #333; padding: 10px 20px; display: flex; justify-content: space-between; align-items: center; }
+    .logo { color: #fff; font-size: 24px; }
+    ul { display: flex; list-style: none; gap: 20px; }
+    a { color: #fff; text-decoration: none; padding: 5px 10px; transition: background 0.3s; }
+    a:hover { background: #06b6d4; border-radius: 5px; }
+
+    /* Content Section */
+    .content { padding: 20px; }
+    section { background: #f4f4f4; padding: 50px; margin: 20px 0; }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      ul { flex-direction: column; gap: 10px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav>
+    <div class="logo">MySite</div>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Content -->
+  <div class="content">
+    <section id="home">Home</section>
+    <section id="about">About</section>
+    <section id="contact">Contact</section>
+  </div>
+
+</body>
+</html>
